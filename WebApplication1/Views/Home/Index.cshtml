@@ -1,0 +1,14 @@
+﻿@model IEnumerable<WebApplication1.Models.Person>
+@{
+    ViewData["Title"] = "Index";
+    Layout = null;
+}
+
+<h2>Index</h2>
+
+@foreach (WebApplication1.Models.Person r in Model)
+{
+    <tr>
+        <td>@r.FirstName</td>
+    </tr>
+}
