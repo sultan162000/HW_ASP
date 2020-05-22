@@ -12,7 +12,6 @@ namespace WebApplication1.Controllers
         public ViewResult Index()
         {
             list = person.GetUsers();
-
             return View(list);
         }
     }

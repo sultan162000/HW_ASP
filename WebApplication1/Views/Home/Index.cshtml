@@ -1,14 +1,41 @@
 ﻿@model IEnumerable<WebApplication1.Models.Person>
 @{
     ViewData["Title"] = "Index";
-    Layout = null;
+    Layout = "_Layout";
 }
 
-<h2>Index</h2>
+<section id="about-page">
+    <div class="container">
+        <div class="row">
 
-@foreach (WebApplication1.Models.Person r in Model)
-{
-    <tr>
-        <td>@r.FirstName</td>
-    </tr>
-}
+            <div class="col-md-12 text-center">
+                <h1 class="about-title">HW_21_05</h1>
+                <div class="service-aro-icon">
+                    <div class="service-aro-left"></div>
+                    <i class="fa fa-group"></i>
+                    <div class="service-aro-right"></div>
+                </div>
+                <h2>Academy C#</h2>
+            </div>
+
+            @foreach (WebApplication1.Models.Person r in Model)
+            {
+                <div class="col-md-4 text-center member">
+                    <div class="member-img">
+                        <img src="https://st2.depositphotos.com/1531183/5770/v/450/depositphotos_57709697-stock-illustration-мужской-силуэт-человека-фотография-профиля.jpg" alt="" />
+                    </div>
+                    <h3>@r.FirstName @r.LastName</h3>
+                    <h5><a href="http://github.com/sultan162000">http://github.com/sultan162000</a></h5>
+                </div>
+            }
+
+
+
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+</section><!-- /#about-page -->
+
+
+
+
+
