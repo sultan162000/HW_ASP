@@ -12,6 +12,8 @@ namespace WebApplication1.Controllers
         public ViewResult Index()
         {
             list = person.GetUsers();
+
+            ViewBag.Greeting = list.Count;
             return View(list);
         }
     }
