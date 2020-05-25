@@ -1,0 +1,25 @@
+﻿@model WebApplication1.Models.Person
+@{ 
+    Layout = "_Layout";
+}
+<!DOCTYPE html>
+    <html>
+    <body>
+        <form asp-action="Register" method="post">
+            <div asp-validation-summary="All"></div>
+            <p>
+                <label asp-for="LastName">Имя:</label>
+                <input asp-for="LastName" />
+            </p>
+            <p>
+                <label asp-for="FirstName">Фамилия:</label>
+                <input asp-for="FirstName" />
+            </p>
+            <p>
+                <label asp-for="MiddleName">Отчество(необязательно):</label>
+                <input asp-for="MiddleName" />
+            </p>
+            <button type="submit">Добавить</button>
+        </form>
+    </body>
+</html>

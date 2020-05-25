@@ -22,3 +22,5 @@ C:\Users\Sultan\source\repos\HW_D\WebApplication1\bin\Debug\netcoreapp2.1\WebApp
 C:\Users\Sultan\source\repos\HW_D\WebApplication1\obj\Debug\netcoreapp2.1\WebApplication1.Views.pdb
 C:\Users\Sultan\source\repos\HW_D\WebApplication1\obj\Debug\netcoreapp2.1\WebApplication1.csproj.CopyComplete
 C:\Users\Sultan\source\repos\HW_D\WebApplication1\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+C:\Users\Sultan\source\repos\HW_D\WebApplication1\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+C:\Users\Sultan\source\repos\HW_D\WebApplication1\obj\Debug\netcoreapp2.1\Razor\Views\Home\Register.g.cshtml.cs

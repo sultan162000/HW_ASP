@@ -4,19 +4,27 @@
     Layout = "_Layout";
 }
 
-<section id="about-page">
-    <div class="container">
-        <div class="row">
 
+<section id="about-page">
+    
+    <div class="container">
+
+        <div class="row">
+            
             <div class="col-md-12 text-center">
-                <h2 class="about-title">Academy c#</h2>
-                <div class="service-aro-icon">
-                    <div class="service-aro-left"></div>
-                    <i class="fa fa-group"></i>
-                    <div class="service-aro-right"></div>
-                </div>
-                <h2>@ViewBag.Greeting обучающихся</h2>
+                <h2><a asp-action="Register">Добавить</a></h2>
             </div>
+            @using (Html.BeginForm("Search", "Home", FormMethod.Get, new { @class = "form-wrapper cf" }))
+            {
+
+                <p>
+                    <input type="search" name="res" placeholder="Введите ID или Фамилию" required />
+                    <button type="submit">Искать</button>
+                </p>
+
+            }
+
+
 
             @foreach (WebApplication1.Models.Person r in Model)
             {

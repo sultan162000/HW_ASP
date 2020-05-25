@@ -8,7 +8,7 @@ namespace WebApplication1.Models
 {
     public class PersonRepository
     {
-        const string conStr = "Data Source=localhost; Initial Catalog=alif;Integrated Security=True";
+        const string conStr = "Data Source=localhost;Initial Catalog=alif;Integrated Security=True";
 
         public List<Person> GetUsers()
         {
@@ -19,5 +19,14 @@ namespace WebApplication1.Models
             }
             return persons;
         }
+
+        public void AddU(Person p)
+        {
+            using (IDbConnection db = new SqlConnection(conStr))
+            {
+                var affect = db.Execute($"Insert INTO Person(LastName,FirstName,MiddleName) values('{p.LastName}','{p.FirstName}','{p.MiddleName}')");
+            }
+        }
+
     }
 }

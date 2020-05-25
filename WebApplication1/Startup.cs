@@ -23,8 +23,13 @@ namespace WebApplication1
             //{
             //    await context.Response.WriteAsync("Hello World!");
             //});
-
-            app.UseMvcWithDefaultRoute();
+            
+            app.UseMvc(routes =>
+            {
+                routes.MapRoute(
+                    name: "default",
+                    template: "{controller=Home}/{action=Index}/{id?}");
+            });
 
         }
     }
